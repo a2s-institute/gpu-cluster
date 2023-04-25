@@ -1,0 +1,8 @@
+{
+    "label": "Server Mangement",
+    "position": 3,
+    "link": {
+        "type": "generated-index",
+        "description": "This guide is intended for system admin or staff members."
+    }
+}
