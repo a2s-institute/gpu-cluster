@@ -1,3 +1,26 @@
+name: Deploy Github Pages
+
+on:
+  push:
+    branches: [main]
+
+  # Allows you to trigger run manually
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+env:
+  # Hosted GitHub runners memory 6GB
+  NODE_OPTIONS: --max-old-space-size=6144
+
 jobs:
   deploy:
     environment:
@@ -21,6 +44,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
+          # Upload entire repository
           path: build
       - name: Deploy to GitHub Pages
         id: deployment
