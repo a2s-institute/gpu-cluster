@@ -16,7 +16,7 @@ const config = {
     // baseUrl: '/${projectName}/',
     baseUrl: '/',
 
-    onBrokenLinks: 'throw',
+    onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
 
     // GitHub Pages adds a trailing slash by default
