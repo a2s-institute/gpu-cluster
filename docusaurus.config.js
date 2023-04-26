@@ -74,11 +74,11 @@ const config = {
                     position: 'left',
                     label: 'Documentation',
                 },
-                {
-                    to: '/hub',
-                    label: 'JupyterHub',
-                    position: 'left'
-                },
+                // {
+                //     to: '/hub',
+                //     label: 'JupyterHub',
+                //     position: 'left'
+                // },
                 {
                     to: '/blog',
                     label: 'News',
