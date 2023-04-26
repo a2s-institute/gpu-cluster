@@ -3,7 +3,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const organizationName = "mas-group";
 const projectName = "gpu-cluster";
 
-/** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'A2S GPU Cluster',
     tagline: 'A Kubernetes-based compute cluster with ready-to-use machine learning environments',
@@ -37,16 +36,16 @@ const config = {
     presets: [
         [
             'classic',
-            /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
                 },
-                blog: {
-                    showReadingTime: true,
-                    editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
-                },
+                blog: false,
+                // blog: {
+                //     showReadingTime: true,
+                //     editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
+                // },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
                 },
@@ -55,7 +54,6 @@ const config = {
     ],
 
     themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
         tableOfContents: {
             minHeadingLevel: 2,
