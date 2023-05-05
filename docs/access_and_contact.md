@@ -3,7 +3,9 @@ sidebar_position: 1
 ---
 
 # Access and Contact
-The server can be accessed internally via this address [https://a2s-cluster.inf.h-brs.de](a2s-cluster.inf.h-brs.de)
+The server can only be accessed internally using the university network or remotely via [FB02 VPN](https://faq.inf.h-brs.de/faq/vpn). 
+
+Server address: [a2s-cluster.inf.h-brs.de/jupyterhub](https://a2s-cluster.inf.h-brs.de/jupyterhub)
 
 ## Getting Access
 To access the server, please send an email to <mohammad.wasil@h-brs.de> or <sebastian.houben@h-brs.de> with the following information:
