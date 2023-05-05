@@ -42,9 +42,9 @@ const config = {
                     editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
                 },
                 blog: {
-                     showReadingTime: true,
-                     editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
-                     editUrl: ({locale, blogDirPath, blogPath, permalink}) =>
+                    showReadingTime: true,
+                    editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
+                    editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
                         `https://github.com/${organizationName}/${projectName}/edit/main/${blogDirPath}/${blogPath}`,
                 },
                 theme: {
@@ -56,54 +56,54 @@ const config = {
 
     themeConfig:
         ({
-        tableOfContents: {
-            minHeadingLevel: 2,
-            maxHeadingLevel: 5,
-        },
-        navbar: {
-            title: 'A2S GPU Cluster',
-            logo: {
-                alt: 'A2S Group Logo',
-                src: 'img/A2S_Bildmarke_RGB.svg',
+            tableOfContents: {
+                minHeadingLevel: 2,
+                maxHeadingLevel: 5,
             },
-            items: [{
-                    type: 'doc',
-                    docId: 'about',
-                    position: 'left',
-                    label: 'Documentation',
+            navbar: {
+                title: 'A2S GPU Cluster',
+                logo: {
+                    alt: 'A2S Group Logo',
+                    src: 'img/A2S_Bildmarke_RGB.svg',
                 },
-                // {
-                //     to: '/hub',
-                //     label: 'JupyterHub',
-                //     position: 'left'
-                // },
-                {
-                    to: '/blog',
-                    label: 'News',
-                    position: 'left'
-                },
-                {
-                    href: 'https://github.com/mas-group/gpu-cluster',
-                    label: 'GitHub',
-                    position: 'right',
-                },
-                {
-                    type: 'localeDropdown',
-                    position: 'right'
-                },
-            ],
-        },
-        footer: {
-            style: 'dark',
-            copyright: `Copyright © ${new Date().getFullYear()} A2S Institute<br>
+                items: [{
+                        type: 'doc',
+                        docId: 'about',
+                        position: 'left',
+                        label: 'Documentation',
+                    },
+                    {
+                        to: 'https://a2s-cluster.inf.h-brs.de/jupyterhub',
+                        label: 'JupyterHub',
+                        position: 'left'
+                    },
+                    {
+                        to: '/blog',
+                        label: 'News',
+                        position: 'left'
+                    },
+                    {
+                        href: 'https://github.com/mas-group/gpu-cluster',
+                        label: 'GitHub',
+                        position: 'right',
+                    },
+                    {
+                        type: 'localeDropdown',
+                        position: 'right'
+                    },
+                ],
+            },
+            footer: {
+                style: 'dark',
+                copyright: `Copyright © ${new Date().getFullYear()} A2S Institute<br>
                         Institute for Artificial Intelligence and Autonomous Systems (A2S)<br>
                         Hochschule Bonn-Rhein-Sieg`,
-        },
-        prism: {
-            theme: lightCodeTheme,
-            darkTheme: darkCodeTheme,
-        },
-    }),
+            },
+            prism: {
+                theme: lightCodeTheme,
+                darkTheme: darkCodeTheme,
+            },
+        }),
 };
 
 module.exports = config;
