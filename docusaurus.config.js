@@ -3,16 +3,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const organizationName = "mas-group";
 const projectName = "gpu-cluster";
 
+const url = process.env.URL || "https://mas-group.github.io";
+const baseUrl = process.env.BASE_URL || "/gpu-cluster/";
+
 const config = {
     title: 'A2S GPU Cluster',
     tagline: 'A Kubernetes-based compute cluster with ready-to-use machine learning environments',
     favicon: 'img/A2S_Bildmarke_RGB.svg',
 
-    // Set the production url of your site here
-    url: `https://${organizationName}.github.io`,
-    // Set the /<baseUrl>/ pathname under which your site is served
-    // For GitHub pages deployment, it is often '/<projectName>/'
-    baseUrl: `/${projectName}/`,
+    url: url,
+    baseUrl: baseUrl,
 
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
