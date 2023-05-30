@@ -7,11 +7,13 @@ ENV NPM_CONFIG_LOGLEVEL=warn
 ENV NPM_CONFIG_COLOR=false
 
 WORKDIR /home/node/app
-COPY --chown=node:node . /home/node/app/
+COPY . /home/node/app/
 
 # Build static web
 RUN yarn
 RUN yarn build
+
+RUN chown node:node -R /home/node/app/
 
 # Run as node user
 USER node
