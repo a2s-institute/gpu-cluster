@@ -1,9 +1,9 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const organizationName = "mas-group";
+const organizationName = "a2s-institute";
 const projectName = "gpu-cluster";
 
-const url = process.env.URL || "https://mas-group.github.io";
+const url = process.env.URL || "https://a2s-institute.github.io";
 const baseUrl = process.env.BASE_URL || "/gpu-cluster/";
 
 const config = {
@@ -97,7 +97,7 @@ const config = {
                         position: 'left'
                     },
                     {
-                        href: 'https://github.com/mas-group/gpu-cluster',
+                        href: 'https://github.com/a2s-institute/gpu-cluster',
                         label: 'GitHub',
                         position: 'right',
                     },
