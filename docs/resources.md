@@ -20,19 +20,25 @@ the same node that can be used in parallel.
 | max boost clock | 4.5GHz | 4.5GHz | 4.5GHz | 4.5GHz | 4.5GHz |
 | L1/L2/L3 cache | 1.5MB/12MB/128MB | 1.5MB/12MB/128MB | 1.5MB/12MB/128MB | 1.5MB/12MB/128MB | 1.5MB/12MB/128MB |
 | memory | 128GB | 128GB | 128GB | 128GB | 128GB |
-| GPU | 3x Nvidia RTX 3090 24GB | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB |
+| GPU | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB |
+
+:::info
+`node2` is currently not operational
+:::
 
 ## Storage
-As for the storage, the cluster has a RAID 10 storage which provides users with a high-performance, fault-tolerant storage solution. RAID 10 is a combination of RAID 1 (mirroring) 
-and RAID 0 (striping) that provides both data redundancy and increased performance. 
-With RAID 10, data is mirrored across multiple disks, providing redundancy in case of disk failure, 
-while striping allows data to be written and read simultaneously across multiple disks, increasing read and write performance.
+As for the storage, there are two volumes mounted for each user.
 
-There are two directories that have read-write access for users:
-* `/home/jovyan`: user's home directory
-* `/home/jovyan/shared`: shared directory (all files inside this directory are available to all users)
+* `/home/jovyan`: user's home directory with a total capacity up to 4TB
+* `/home/jovyan/scratch`: shared directory (all files in this directory are available to all users) with a total capacity up to 8TB and it's a RAID10 storage.
 
 :::tip
-We haven't set any storage limits for users yet, so it's important to use storage wisely.
-To avoid redundancy, it's recommended to copy your public dataset to the `shared` directory so other users can access it without creating a new copy.
+We haven't set any storage limits for users for both `home` and `scratch` volumes yet, so it's important to use storage wisely.
+To avoid redundancy, it's recommended to copy your public dataset to the `scratch` directory so other users can access it without creating a new copy.
+:::
+
+:::note
+Please note that our storage does not have backup and therefore you should take care your personal data by making backup yourself.
+
+User's data will also be deleted once you are not in the list anymore.
 :::
