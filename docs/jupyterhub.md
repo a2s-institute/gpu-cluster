@@ -31,7 +31,7 @@ Note that if you have access to shared GPUs, other users may have been using the
 /home/jovyan
 
 # Shared directory
-/home/jovyan/shared
+/home/jovyan/scratch
 ```
 
 ## Resource usage monitoring
