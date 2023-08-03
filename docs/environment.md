@@ -57,6 +57,6 @@ As mentioned in the previous section, the environment is based on the image defi
   You should add `--user` argument to make it persistent, otherwise your library will be removed when your Notebook server is terminated.
   :::
 
-  :::warning
+  :::tip
   Installing pip environment with `--user` option locally can result in conflicts with the system-wide environment.
   :::
