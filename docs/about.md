@@ -17,3 +17,4 @@ In this document, you will find various details on how to use the cluster.
   * [Server configuration](server-management/server-config.md)
   * [User management](server-management/user-management.md)
   * [Monitoring](server-management/monitoring.md)
+* [FAQ](faq.md)
