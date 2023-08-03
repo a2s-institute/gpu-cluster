@@ -41,3 +41,18 @@ RUN apt-get install -y vim
 # Install pandas
 RUN apt install -y pandas
 ```
+
+## Creating your own environment on the server
+As mentioned in the previous section, the environment is based on the image defined in the [docker-stacks](https://github.com/a2s-institute/docker-stacks). However, if you want to add your own environment on the server without changing the upstream environment, you can do so by installing it directly on the server.
+
+* Open terminal (Notebook Home -> New -> Terminal)
+* Add your libraries directly via pip
+  ```
+  pip install tensorflow==2.13 --user
+  ...
+  ...
+  ```
+
+  :::info
+  You should add `--user` argument to make it persistent, otherwise your library will be removed when your Notebook server is terminated.
+  :::
