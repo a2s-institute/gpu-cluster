@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 # Access and Contact
-The server can only be accessed internally using the university network or remotely via [FB02 VPN](https://faq.inf.h-brs.de/faq/vpn). 
+The server can only be accessed internally using the university network or remotely via [FB02 VPN](https://faq.infcs.de/vpn/). 
 
 Server address: [a2s-cluster.inf.h-brs.de/jupyterhub](https://a2s-cluster.inf.h-brs.de/jupyterhub)
 
