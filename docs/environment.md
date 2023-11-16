@@ -45,6 +45,28 @@ RUN apt install -y pandas
 ## Creating your own environment on the server
 As mentioned in the previous section, the environment is based on the image defined in the [docker-stacks](https://github.com/a2s-institute/docker-stacks). However, if you want to add your own environment on the server without changing the upstream environment, you can do so by installing it directly on the server.
 
+### Creating you own conda environment (recommended)
+* Open terminal (Notebook Home -> New -> Terminal)
+* Crate the environment
+  ```
+  conda create --prefix ~/.local/opt/conda/envs/my_env python=3.11 pip ipykernel
+  ```
+  :::info
+  You need ipykernel to make it available in Jupyter Notebook
+  :::
+* Add your new conda environment to `.conda/environments.txt`
+  ```
+  /home/jovyan/.local/opt/conda/envs/my_env
+  ```
+
+A new kernel with your new environment should be available when you create a new Notebook. You can also switch to your new kernel in your running Notebook session.
+
+If you want to use terminal, you can activate your environment using conda activate
+```
+source /opt/conda/bin/activate /home/jovyan/.local/opt/conda/envs/my_env
+```
+
+### Installing packages directly to your local Python environment (not recommended)
 * Open terminal (Notebook Home -> New -> Terminal)
 * Add your libraries directly via pip
   ```
@@ -55,8 +77,7 @@ As mentioned in the previous section, the environment is based on the image defi
 
   :::info
   You should add `--user` argument to make it persistent, otherwise your library will be removed when your Notebook server is terminated.
+
+  Please not that installing pip environment with `--user` option locally can result in conflicts with the system-wide environment.
   :::
 
-  :::tip
-  Installing pip environment with `--user` option locally can result in conflicts with the system-wide environment.
-  :::
