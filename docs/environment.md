@@ -9,7 +9,10 @@ We provide a Jupyter Notebook environment based on a Docker image that can be ho
 
 ## Ubuntu and CUDA version
 Our environment supports the following CUDA version:
-* `11.8.0-cudnn8-runtime-ubuntu22.04`: uses `nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04` (**default**)
+* `12.1.1-cudnn8-runtime-ubuntu22.04`: uses `nvidia/cuda:12.1.1.0-cudnn8-runtime-ubuntu22.04` (**default**)
+  * Pytorch 2.x
+  * Tensorflow 2.x
+* `11.8.0-cudnn8-runtime-ubuntu22.04`: uses `nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04`
   * Pytorch 2.x
   * Tensorflow 2.x
 * `11.3.1-cudnn8-runtime-ubuntu20.04`: this version uses [nvidia/cuda:11.3.1-cudnn8-runtime-ubuntu20.04](https://hub.docker.com/layers/nvidia/cuda/11.3.1-cudnn8-runtime-ubuntu20.04/images/sha256-cb846310153958f4d6cb68af2a26a18532eaf110d67b51db1dd0df425cbdbb23) as the base image.
