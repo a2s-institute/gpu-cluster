@@ -20,11 +20,7 @@ the same node that can be used in parallel.
 | max boost clock | 4.5GHz | 4.5GHz | 4.5GHz | 4.5GHz | 4.5GHz |
 | L1/L2/L3 cache | 1.5MB/12MB/128MB | 1.5MB/12MB/128MB | 1.5MB/12MB/128MB | 1.5MB/12MB/128MB | 1.5MB/12MB/128MB |
 | memory | 128GB | 128GB | 128GB | 128GB | 128GB |
-| GPU | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB |
-
-:::info
-`node2` is currently not operational
-:::
+| GPU | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB | 1x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB |
 
 ## Storage
 As for the storage, there are two volumes mounted for each user.
