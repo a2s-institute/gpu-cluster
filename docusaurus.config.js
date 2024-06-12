@@ -87,7 +87,7 @@ const config = {
                         label: 'Documentation',
                     },
                     {
-                        to: 'https://a2s-cluster.inf.h-brs.de/jupyterhub',
+                        to: 'https://a2s-cluster.inf.h-brs.de',
                         label: 'JupyterHub',
                         position: 'left'
                     },
