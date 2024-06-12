@@ -30,8 +30,8 @@ Note that if you have access to shared GPUs, other users may have been using the
 # Home directory
 /home/jovyan
 
-# Shared directory
-/home/jovyan/scratch
+# Userdata directory with a bigger storage for datasets and logs
+/home/jovyan/userdata/{username}
 ```
 
 ## Resource usage monitoring
