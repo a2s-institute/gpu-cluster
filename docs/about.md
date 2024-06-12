@@ -13,6 +13,8 @@ In this document, you will find various details on how to use the cluster.
 * [JupyterHub](jupyterhub.md)
 * [Kubernetes cluster](kubernetes.md)
 * [Resources](resources.md)
+* [Desktop](desktop.md)
+* [VSCode](using-vscode.md)
 * Server management
   * [Server configuration](server-management/server-config.md)
   * [User management](server-management/user-management.md)
