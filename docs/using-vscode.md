@@ -6,16 +6,18 @@ import JupyterHubVSCode from './img/JupyterHub-VSCode.png';
 import JupyterHubtoken from './img/JupyterHub-token.png';
 import vscode from './img/vscode-jupyterhub.gif';
 
-# VSCode on the server
+# VSCode
+
+## VSCode on the server
 
 * Navigate to `Launcher` tab
 * Select `VS Code`
 
-# Connecting local VSCode to the hub
+## Connecting local VSCode to the hub
 
 With the [JupyterHub](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter-hub&ssr=false#overview) extension, you can connect local VSCode to Jupyter Notebook remote kernels. Your notebook files are saved locally on your machine, but you can still access the remote files such as home directory `/home/jovyan` and dataset directory `/home/jovyan/userdata/{username}`. However, if you want to upload files to the Notebook server, you need to use JupyterHub on the web.
 
-## How to setup VSCode and JupyterHub
+### How to setup VSCode and JupyterHub
 
 * [Download](https://code.visualstudio.com/download) and install VSCode
 * Install [JupyterHub VSCode extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter-hub&ssr=false#overview). Click on the extensions on the sidebar (Or View > Extensions) , search for JupyterHub, then click on the blue install button
