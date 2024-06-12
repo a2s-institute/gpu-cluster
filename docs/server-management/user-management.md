@@ -14,9 +14,9 @@ ToDo: picture
 
   | Username | Node                    | RAM | CPU | GPU | GPU_shared | Start_time       | End_time        | Staff | Image                                                                                                                         |
 | -------- | ----------------------- | --- | --- | --- | ---------- | ---------------- | ---------------- | ----- | ----------------------------------------------------------------------------------------------------------------------------- |
-| mwasil2m | node0+node1 | 64  | 24  | 3   | 1          | 14.03.2023-12:00 | 14.04.2024-19:00 | 1     | ghcr.io/b-it-bots/docker/gpu-notebook:11.3.1-cudnn8-runtime-ubuntu20.04+ghcr.io/digiklausur/docker-stacks/notebook-dev:latest |
-| mwasil2s | node0                   | 8   | 4   | 2   | 0          | 14.02.2023-12:00 | 14.02.2024-19:00 | 0     |                                                                                                                               |
-| tmetzl2m | dynamic_node | 64  | 24  | 3   | 1          | 14.03.2023-12:00 | 14.04.2024-19:00 | 1     | ghcr.io/b-it-bots/docker/gpu-notebook:11.3.1-cudnn8-runtime-ubuntu20.04+ghcr.io/digiklausur/docker-stacks/notebook-dev:latest |
+| muenst2s | node0+node1 | 64  | 24  | 3   | 1          | 14.03.2023-12:00 | 14.04.2024-19:00 | 1     | ghcr.io/b-it-bots/docker/gpu-notebook:11.3.1-cudnn8-runtime-ubuntu20.04+ghcr.io/digiklausur/docker-stacks/notebook-dev:latest |
+| mmuens2s | node0                   | 8   | 4   | 2   | 0          | 14.02.2023-12:00 | 14.02.2024-19:00 | 0     |                                                                                                                               |
+| mmuensd2s | dynamic_node | 64  | 24  | 3   | 1          | 14.03.2023-12:00 | 14.04.2024-19:00 | 1     | ghcr.io/b-it-bots/docker/gpu-notebook:11.3.1-cudnn8-runtime-ubuntu20.04+ghcr.io/digiklausur/docker-stacks/notebook-dev:latest |
 
   * `Username`: UID of the user
   * `Node`: Nodes availabe to users (options: `node0`, `node1`, `node2`, `node3`, `node4`, and `dynamic_node`). Sign `+` indicates that the user has access to multiple nodes that are labelled `a2s.cluster.gpu/node-label=<label>`, and `dynamic_node` indicates that the user can be allocated dynamically (depending on the resource availability) to nodes which are labelled `a2s.cluster.gpu/node-allocation=dynamic`.
