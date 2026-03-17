@@ -8,7 +8,7 @@ With JupyterHub, multiple users can access and collaborate on a shared computing
 JupyterHub provides an easy-to-use web interface for managing user accounts, launching notebooks, and managing user environments. Moreover, JupyterHub is highly customizable, allowing administrators to set up authentication and authorization systems, customize user environments, and integrate with other tools and services.
 
 ## Login
-Authorized users can log in using LDAP. Note that LDAP currently only works for FB02 students.
+Log in using FB02 GitLab
 
 ![Login](./img/login.png)
 
