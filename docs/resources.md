@@ -10,7 +10,7 @@ the same node can be used in parallel, provided that you have requested more tha
 
 ## Compute and Memory
 
-| system | node0 | node1 | node2 | node3 | node4 |
+| system | node0 | node1 (not available) | node2 | node3 | node4 |
 |---|---|---|---|---|---|
 | hostname | mas-ws00 | mas-ws01 | mas-ws02 | mas-ws03 | mas-ws04 |
 | processor | AMD Ryzen Threadripper PRO 5965WX | AMD Ryzen Threadripper PRO 5965WX | AMD Ryzen Threadripper PRO 5965WX | AMD Ryzen Threadripper PRO 5965WX | AMD Ryzen Threadripper PRO 5965WX |
@@ -20,7 +20,7 @@ the same node can be used in parallel, provided that you have requested more tha
 | max boost clock | 4.5GHz | 4.5GHz | 4.5GHz | 4.5GHz | 4.5GHz |
 | L1/L2/L3 cache | 1.5MB/12MB/128MB | 1.5MB/12MB/128MB | 1.5MB/12MB/128MB | 1.5MB/12MB/128MB | 1.5MB/12MB/128MB |
 | memory | 128GB | 128GB | 128GB | 128GB | 128GB |
-| GPU | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX 3090 24GB | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB |
+| GPU | 4x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX 3090 24GB | 2x Nvidia RTX A5000 24GB | 2x Nvidia RTX A5000 24GB |
 
 ## Storage
 As for the storage, there are two volumes mounted for each user.
