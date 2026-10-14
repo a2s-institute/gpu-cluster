@@ -1,10 +1,12 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const organizationName = "a2s-institute";
-const projectName = "gpu-cluster";
+const [repoOwnerFromEnv, repoNameFromEnv] = (process.env.GITHUB_REPOSITORY || '').split('/');
+const organizationName = process.env.GITHUB_REPOSITORY_OWNER || repoOwnerFromEnv || "a2s-institute";
+const projectName = repoNameFromEnv || "gpu-cluster";
 
-const url = process.env.URL || "https://a2s-institute.github.io";
-const baseUrl = process.env.BASE_URL || "/gpu-cluster/";
+const isUserOrOrgPage = projectName === `${organizationName}.github.io`;
+const url = process.env.URL || `https://${organizationName}.github.io`;
+const baseUrl = process.env.BASE_URL || (isUserOrOrgPage ? '/' : `/${projectName}/`);
 
 const config = {
     title: 'A2S GPU Cluster',
